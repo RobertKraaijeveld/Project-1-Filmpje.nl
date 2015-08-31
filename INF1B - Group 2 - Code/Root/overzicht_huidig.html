@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Filmpje - Films die op het moment draaien</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+        
+        <!-- CSS files -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+        <!-- For POPUP -->
+        <link rel="stylesheet" href="css/popup.css" type="text/css" />
+
+        <!-- Script files -->
+        <script src="js/main.js"></script>
+        <script src="js/jquery-1.11.1.min.js"></script>
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="foundicons/foundation-icons.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <header>
+
+            <div class="container">
+                <a href="index.html" class="logo">Filmpje</a>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="over_ons.html">Over Filmpje</a></li>
+                        <li>
+                            <a href="overzicht.html" class="active">Films</a>
+                            <ul>
+                                <li><a href="overzicht_huidig.html" class="active">huidige films</a></li>
+                                <li><a href="overzicht_binnenkort.html">Binnenkort</a></li>
+                                <li><a href="overzicht_archief.html">Archief</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="catering.html">Catering</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav><!-- end nav -->
+            </div>
+        </header><!-- end header -->
+		
+		<main>
+			<div class="settings">
+				<div class="container module">
+					<form class="filters">
+						<label>Genre:</label>
+                        <select name="filter_age" onchange="selectie(this)">
+                            <option value="Niets">Alle</option>
+                            <option value="A">Actie</option>
+                            <option value="B">Comedy</option>
+                            <option value="C">Sci-Fi</option>
+                            <option value="D">Thriller</option>
+                        </select>
+						
+						<label>Filter:</label>
+                        <select name="filter_alf" onchange="sorting(this)">
+                            <option selected="selected" value="">Geen</option>
+                            <option value="A-Z"         >A-Z</option>
+                            <option value="Z-A"         >Z-A</option>
+                            <option value="IMDB"        >IMDB-rating</option>
+                            <option value="Speeltijd"   >Speeltijd</option>
+                        </select>
+					</form>
+					<!-- end filters -->
+					
+					<form class="search">
+                        <input type="text" title="Zoekbalk" id="userinput" placeholder="Typ hier om te zoeken" class="input_box" onkeydown="if (event.keyCode == 13) document.getElementById('search_button').click()">
+						
+                        <input class="search_button" onsubmit="return false;" type="button" value="Zoek" id="search_button">
+						
+
+					</form>
+					<!-- end search -->
+				</div>
+				<!-- end container module -->
+			</div>
+			<!-- end settings -->
+
+
+			
+			<div class="overzicht-wrap" id="overzicht_warp">
+				<div class="container module">
+					<ul class="overzicht_list" id="overzicht_list">
+						<li id="As Above, So Below" class="overzicht_list_item D">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/as_above_so_below.jpg" alt="As Above, So Below cover">
+								
+								<a id="As Above, So below" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 7 euro</span>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="100" class="6.2 linksh3 filmnaam" href="details/as_above_so_below.html">As Above, So Below</a></h3>
+								<p>
+									Onder de straten van Parijs liggen kilometers aan gangenstelsels, de eeuwige thuishaven van talloze zielen. Wanneer een team van ontdekkingsreizigers het doolhof van botten verkent, ontdekt men het duistere geheim dat binnen deze stad van de doden ligt verscholen...
+								</p>
+								
+								<a href="details/as_above_so_below.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/16.png" alt="16"></li>
+									<li><img src="images/ratings/angst.png" alt="16"></li>
+									<li><img src="images/ratings/geweld.png" alt="16"></li>
+									<li><img src="images/ratings/grof_taalgebruik.png" alt="16"></li>
+								</ul>
+							</div>
+						</li>
+						<!-- end overzicht_list_item -->
+						
+						<li id="guardians of the galaxy" class="overzicht_list_item C">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/guardians_of_the_galaxy.jpg" alt="guardians of the galaxy">
+								
+								<a id="Guardians of the galaxy" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 7 euro</span>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="121" class="8.5 linksh3 filmnaam" href="details/guardians_of_the_galaxy.html">guardians of the galaxy</a></h3>
+								<p>
+									Intergalactische politieagent Peter Quill komt in het bezit van een mysterieus object dat toebehoort aan Ronan, een machtige schurk die de veiligheid van het universum in gevaar brengt... 
+								</p>
+								
+								<a href="details/guardians_of_the_galaxy.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/16.png" alt="16"></li>
+									<li><img src="images/ratings/angst.png" alt="16"></li>
+									<li><img src="images/ratings/geweld.png" alt="16"></li>
+									<li><img src="images/ratings/grof_taalgebruik.png" alt="16"></li>
+								</ul>
+							</div>
+						</li>
+						<!-- end overzicht_list_item -->
+						
+						<li id="if i stay" class="overzicht_list_item D">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/if_i_stay.jpg" alt="If i stay">
+								
+								<a id="If i stay" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 7 euro</span>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="107" class="7.1 linksh3 filmnaam" href="details/if_i_stay.html">if i stay</a></h3>
+								<p>
+									Het verhaal gaat over een 17-jarig meisje Mia (Chloë Moretz ) dat in een coma raakt en een zogenaamde uittreding heeft nadat zij en haar familie betrokken zijn bij een tragisch auto-ongeluk...
+								</p>
+								
+								<a href="details/if_i_stay.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/16.png" alt="12"></li>
+									<li><img src="images/ratings/angst.png" alt="angst"></li>
+									
+								</ul>
+							</div>
+						</li>
+						<!-- end overzicht_list_item -->
+						
+						<li id="the zero theorem" class="overzicht_list_item D">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/the_zero_theorem.jpg" alt="The Zero Theorem">
+								
+								<a id="The zero theorem" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 7 euro</span>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="108" class="6.1 linksh3 filmnaam" href="details/the_zero_theorem.html">the zero theorem</a></h3>
+								<p>
+									Een computerhacker heeft zich als doel gesteld om de reden van het menselijke bestaan te ontdekken. Hij wordt in zijn werkzaamheden echter voortdurend gestoord door het Management...
+								</p>
+								
+								<a href="details/the_zero_theorem.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/16.png" alt="16"></li>
+									<li><img src="images/ratings/angst.png" alt="16"></li>
+									<li><img src="images/ratings/geweld.png" alt="16"></li>
+									<li><img src="images/ratings/grof_taalgebruik.png" alt="16"></li>
+								</ul>
+							</div>
+						</li>
+                        
+
+                        <li id="the equalizer" class="overzicht_list_item A">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/theequalizer.jpg" alt="The Equalizer">
+								
+								<a id="The equalizer" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 7 euro</span>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="132" class="7.5 linksh3 filmnaam" href="details/the_equalizer.html">the equalizer</a></h3>
+								<p>
+								In The Equalizer speelt Denzel Washington Robert McCall, een man met een geheimzinnig verleden. Hij woont in Boston en leidt een onopvallend bestaan...
+                                </p>
+								
+								<a href="details/the_equalizer.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/16.png" alt="16"></li>
+						            <li><img src="images/ratings/geweld.png" alt="16"></li>
+									<li><img src="images/ratings/grof_taalgebruik.png" alt="16"></li>
+								</ul>
+							</div>
+                        </li>
+						<!-- end overzicht_list_item -->
+
+
+                        <li id="the maze runner" class="overzicht_list_item C">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/themazerunner.jpg" alt="The Mazerunner">
+								
+								<a id="The mazerunner" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 7 euro</span>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="113" class="7.4 linksh3 filmnaam" href="details/the_mazerunner.html">the maze runner</a></h3>
+								<p>
+									Nadat zijn geheugen is gewist, komt Thomas terecht in een gemeenschap van jonge mannen. Als hij ontdekt dat ze gevangen zitten in een doolhof, sluit Thomas zich aan bij de "runners"...
+								</p>
+								
+								<a href="details/the_mazerunner.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/12.png" alt="12"></li>
+									<li><img src="images/ratings/angst.png" alt="16"></li>
+									<li><img src="images/ratings/geweld.png" alt="16"></li>
+									<li><img src="images/ratings/grof_taalgebruik.png" alt="16"></li>
+								</ul>
+							</div>
+                        </li>
+						<!-- end overzicht_list_item -->
+
+
+                        <li id="pijnstillers" class="overzicht_list_item D">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/pijnstillers.jpg" alt="Pijnstillers">
+								
+								<a id="Pijnstillers" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 7 euro</span>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="119" class="6.9 linksh3 filmnaam" href="details/pijnstillers.html">pijnstillers</a></h3>
+								<p>
+									Casper (Gijs Blom) heeft zijn vader nooit leren kennen en woont alleen met zijn moeder Marit (Birgit Schuurman). In zijn vrije tijd zit hij het liefst achter de piano...
+								</p>
+								
+								<a href="details/pijnstillers.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/9.png" alt="9"></li>
+									<li><img src="images/ratings/angst.png" alt="16"></li>
+				                    <li><img src="images/ratings/grof_taalgebruik.png" alt="16"></li>
+								</ul>
+							</div>
+                        </li>
+						<!-- end overzicht_list_item -->
+
+                        <li id="lucy" class="overzicht_list_item A C">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/lucy.jpg" alt="Lucy">
+								
+								<a id="Lucy" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 7 euro</span>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="102" class="6.5 linksh3 filmnaam" href="details/lucy.html">lucy</a></h3>
+								<p>
+                                    Wanneer de studente Lucy (Scarlett Johansson) per ongeluk betrokken raakt bij een gevaarlijke deal, ontdekt ze dat er geen grenzen zijn aan haar intellectuele ontwikkeling...
+								</p>
+								
+								<a href="details/lucy.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/16.png" alt="16"></li>
+							        <li><img src="images/ratings/geweld.png" alt="16"></li>
+									<li><img src="images/ratings/grof_taalgebruik.png" alt="16"></li>
+								</ul>
+							</div>
+                        </li>
+						<!-- end overzicht_list_item -->
+
+
+                        <li id="into the storm" class="overzicht_list_item D">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/intothestorm.jpg" alt="Into the storm">
+								
+								<a id="Into the storm" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 7 euro</span>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="103" class="5.6 linksh3 filmnaam" href="details/into_the_storm.html">into the storm</a></h3>
+								<p>
+									In één dag wordt het stadje Silverton verwoest door de ongekende kracht van een serie tornado’s. De bevolking is overgeleverd aan de genade van dodelijke cyclonen...
+								</p>
+								
+								<a href="details/into_the_storm.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/12.png" alt="16"></li>
+									<li><img src="images/ratings/angst.png" alt="16"></li>
+								    <li><img src="images/ratings/grof_taalgebruik.png" alt="16"></li>
+								</ul>
+							</div>
+                        </li>
+						<!-- end overzicht_list_item -->
+                        
+
+                        <li id="ninja turtles" class="overzicht_list_item A">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/ninjaturtles.jpg" alt="Ninja Turtles">
+								
+								<a id="Ninja turtles" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 7 euro</span>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="105" class="6.4 linksh3 filmnaam" href="details/ninja_turtles.html">ninja turtles</a></h3>
+								<p>
+									In de spectaculaire 3D actiefilm Ninja Turtles heeft Shredder iedereen in New York samen met zijn kwaadaardige Foot Clan in zijn macht...
+								</p>
+								
+								<a href="details/ninja_turtles.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/12.png" alt="12"></li>
+								    <li><img src="images/ratings/geweld.png" alt="16"></li>
+									
+								</ul>
+							</div>
+                        </li>
+						<!-- end overzicht_list_item -->
+
+
+                        <li id="bloedlink" class="overzicht_list_item D">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/bloedlink.jpg" alt="Bloedlink">
+								
+								<a id="Bloedlink" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 7 euro</span>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="106" class="5.7 linksh3 filmnaam" href="details/bloedlink.html">bloedlink</a></h3>
+								<p>
+									De jonge, knappe Ricoen en de norse Victor hebben als ex-gedetineerden een waterdicht plan uitgewerkt voor de ontvoering op de 25-jarige Laura Temming...
+								</p>
+								
+								<a href="details/bloedlink.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/12.png" alt="12"></li>
+									<li><img src="images/ratings/angst.png" alt="angst"></li>
+									<li><img src="images/ratings/geweld.png" alt="geweld"></li>
+									<li><img src="images/ratings/grof_taalgebruik.png" alt="grof taalgebruik"></li>
+                                    <li><img src="images/ratings/seks.png" alt="seks"></li>
+								</ul>
+							</div>
+                        </li>
+						<!-- end overzicht_list_item -->
+
+
+                        <li id="lucia de b." class="overzicht_list_item D">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/luciadeb.jpg" alt="Lucia de B.">
+								
+								<a id="Lucia de b." onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 7 euro</span>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="104" class="7.2 linksh3 filmnaam" href="details/lucia_de_b.html">lucia de b.</a></h3>
+								<p>
+									Lucia de Berk (Schluter) is een eigenzinnige verpleegster, die argwaan wekt als ze voor de zoveelste keer bij een onverklaarbaar sterfgeval betrokken is..
+								</p>
+								
+								<a href="details/lucia_de_b.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/12.png" alt="12"></li>
+									<li><img src="images/ratings/angst.png" alt="16"></li>
+									<li><img src="images/ratings/geweld.png" alt="16"></li>
+					           </ul>
+							</div>
+                        </li>
+						<!-- end overzicht_list_item -->
+
+					</ul>
+					<!-- end overzicht_list -->
+				</div>
+				<!-- end container module -->
+			</div>
+            <div class="container">
+                <br />
+                <br />
+                <div id="terug"></div>
+                <br />
+            </div>
+			<!-- end overzicht_wrap -->
+		</main>
+		
+		<div class="cBoth"><!-- clearfix --></div>
+		
+		<!-- begin footer -->
+		<footer>
+			<div class="container module">
+				<img src="images/logo_footer.png" alt="Filmpje" class="logofoot" />
+				<span>&#169; Copyright Team Berg - 2014</span>
+			</div>
+		</footer>
+        <!-- Voor popup -->
+         <div id="loginScreen"> 
+            <div style="margin-left:100px;">
+                <a href="#" class="cancel">&times;</a> 
+                <object height="1000" width="1000" data="datumpick.html" ></object>
+            </div>
+        </div>
+        <div id="cover" > 
+
+        </div>
+        
+    </body>
+    <script src="js/genre filter.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/Sorteer.js"></script>
+</html>

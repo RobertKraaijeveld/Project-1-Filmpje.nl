@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Filmpje - Films die binnenkort draaien</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+        
+        <!-- For POPUP -->
+        <link rel="stylesheet" href="css/popup.css" type="text/css" />
+
+        <!-- Script files -->
+        <script src="js/main.js"></script>
+        <script src="js/jquery-1.11.1.min.js"></script>
+
+        <!-- CSS files -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="foundicons/foundation-icons.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+        <!-- JS files -->
+        <script src="js/search.js">          
+        </script>
+
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo">Filmpje</a>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="over_ons.html">Over Filmpje</a></li>
+                        <li>
+                            <a href="overzicht.html" class="active">Films</a>
+                            <ul>
+                                <li><a href="overzicht_huidig.html">huidige films</a></li>
+                                <li><a href="overzicht_binnenkort.html" class="active">Binnenkort</a></li>
+                                <li><a href="overzicht_archief.html">Archief</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="catering.html">Catering</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav><!-- end nav -->
+            </div>
+        </header><!-- end header -->
+		
+		<main>
+			<div class="settings">
+				<div class="container module">
+					<form class="filters">
+						<label>Genre:</label>
+                        <select name="filter_age" onchange="selectie(this)">
+                            <option value="Niets">Alle</option>
+                            <option value="A">Actie</option>
+                            <option value="B">Comedy</option>
+                            <option value="C">Sci-Fi</option>
+                            <option value="D">Thriller</option>
+                        </select>
+						
+						<label>Filter:</label>
+                        <select name="filter_alf" onchange="sorting(this)">
+                            <option value="" selected="selected">Geen</option>
+                            <option value="A-Z"         >A-Z</option>
+                            <option value="Z-A"         >Z-A</option>
+                            <option value="Speeltijd"   >Speeltijd</option>
+                        </select>
+					</form>
+					<!-- end filters -->
+					
+					<form class="search">
+                        <input type="text" title="Zoekbalk" id="userinput" placeholder="Typ hier om te zoeken" class="input_box" onkeydown="if (event.keyCode == 13) document.getElementById('search_button').click()">
+						
+                        <input class="search_button" onsubmit="return false;" type="button" value="Zoek" id="search_button">
+						
+
+					</form>
+					<!-- end search -->
+				</div>
+				<!-- end container module -->
+			</div>
+			<!-- end settings -->
+			
+			<div class="overzicht-wrap" id="overzicht_warp">
+				<div class="container module">
+					<ul class="overzicht_list" id="overzicht_list">
+						<li id="nightcrawler" class="overzicht_list_item D">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/nightcrawler.jpg" alt="Nightcrawler">
+								
+
+								<a id="Nightcrawler" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 31 oktober </span>
+							</div>
+							<!-- end item_info -->
+							<div class="item_content">
+								<h3><a id="117" class="8.2 linksh3 filmnaam" href="details/nightcrawler.html">nightcrawler</a></h3>
+								<p>
+									Los Angeles. Lou Bloom (Gyllenhaal) is een gedreven jongeman die wanhopig op zoek is naar een baan. Hij ontdekt de snelle wereld van misdaadverslaggeving in de Amerikaanse miljoenenstad en worstelt zich al snel tussen de die-hard freelance journalisten die auto-ongelukken, branden, moorden en andere...
+                                </p>
+								
+								<a href="details/nightcrawler.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/16.png" alt="16"></li>
+									<li><img src="images/ratings/drugs_misbruik.png" alt="drugs en alcohol misbruik"></li>
+									<li><img src="images/ratings/geweld.png" alt="geweld"></li>
+									<li><img src="images/ratings/grof_taalgebruik.png" alt="grof taalgebruik"></li>
+								</ul>
+							</div>
+						</li>
+						<!-- end overzicht_list_item -->
+						
+						<li id="interstellar" class="overzicht_list_item C">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/interstellar.jpg" alt="Insterstellar">
+								<a id="Interstellar" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 6 november</span>
+							</div>
+							<!-- end item_info -->
+							<div class="item_content">
+								<h3><a id="169" class="0.1 linksh3 filmnaam" href="details/interstellar.html">interstellar</a></h3>
+								<p>
+									In de toekomst zijn regeringen en economieën over de hele wereld ingestort. Voedsel is schaars, NASA bestaat niet meer en de 20ste eeuw is de grote schuldige. Wanneer een mysterieus wormgat in de ruimtetijd opengaat is het aan een groep overblijvende onderzoekers van NASA... 
+                            
+                                </p>
+								
+								<a href="details/interstellar.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/16.png" alt="16"></li>
+									<li><img src="images/ratings/angst.png" alt="angst"></li>
+								</ul>
+							</div>
+						</li>
+						<!-- end overzicht_list_item -->
+						
+						<li id="dumb and dumber to" class="overzicht_list_item B">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/dumbanddumberto.jpg" alt="dumb and dumber to">
+								
+								<a id="Dumb and dumber to" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 13 november</span>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="110" class="0.1 linksh3 filmnaam" href="details/dumb_and_dumber_to.html">dumb and dumber to</a></h3>
+								<p>
+									Harry (Daniels) en Lloyd (Jim Carrey) komen er achter dat Harry een kind heeft, waar hij in principe nooit de verantwoordelijkheid over zou moeten krijgen. Wat volgt is een roadtrip in een poging Harry’s lang verloren dochter - die lijdt aan nierfalen - te... 
+                                </p>
+								
+								<a href="details/dumb_and_dumber_to.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/6.png" alt="6"></li>
+									<li><img src="images/ratings/angst.png" alt="angst"></li>
+									<li><img src="images/ratings/grof_taalgebruik.png" alt="grof taalgebruik"></li>
+								</ul>
+							</div>
+						</li>
+						<!-- end overzicht_list_item -->
+						
+						<li id="beyond the lights" class="overzicht_list_item D">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/beyondthelights.jpg" alt="Beyond the lights">
+								
+								<a id="Beyond the lights" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 14 november</span>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="116" class="5.7 linksh3 filmnaam" href="details/beyond_the_lights.html">beyond the lights</a></h3>
+								<p>
+									De getalenteerde jonge muzikante Noni Jean staat op het randje van sterrendom. Maar door haar succes worstelt ze met de druk, tot ze politieagent Kaz Nicol ontmoet, die ambities heeft om het tot politicus te schoppen. Ze voelen zich tot elkaar aangetrokken, maar het... 
+                            
+                                </p>
+								
+								<a href="details/beyond_the_lights.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/16.png" alt="16"></li>
+									<li><img src="images/ratings/seks.png" alt="seks"></li>
+									<li><img src="images/ratings/grof_taalgebruik.png" alt="grof taalgebruik"></li>
+								</ul>
+							</div>
+						</li>
+						<!-- end overzicht_list_item -->
+                        <li id="the hunger games mockingjay part 1" class="overzicht_list_item C">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/hungergames.jpg" alt="Hunger games">
+								
+								<a id="The hunger games mockingjay part 1" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 19 november</span>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="125" class="0.1 linksh3 filmnaam" href="details/hunger_games.html">the hunger games mockingjay part 1</a></h3>
+								<p>
+									Tegen alle verwachtingen in heeft Katniss Everdeen (Jennifer Lawrence) de Hongerspelen twee keer overleefd. Maar ondanks dat ze de bloederige arena levend heeft verlaten, is ze nog steeds niet veilig. Haar geliefde Peeta Mellark (Josh Hutcherson) is gevangen genomen door Het Capitool dat uit... 
+                                </p>
+								
+								<a href="details/hunger_games.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/12.png" alt="12"></li>
+									<li><img src="images/ratings/angst.png" alt="angst"></li>
+									<li><img src="images/ratings/geweld.png" alt="geweld"></li>
+									<li><img src="images/ratings/grof_taalgebruik.png" alt="grof taalgebruik"></li>
+								</ul>
+							</div>
+						</li>
+                        <li id="horrible bosses 2" class="overzicht_list_item B">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/horriblebosses2.jpg" alt="Horrible Bosses 2 cover">
+								
+								<a id="Horrible bosses 2" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 27 november</span>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="108" class="0.1 linksh3 filmnaam" href="details/horrible_bosses_two.html">horrible bosses 2</a></h3>
+								<p>
+									Nick, Dale en Kurt besluiten samen een eigen bedrijf te beginnen zodat ze hun eigen baas kunnen zijn. Een geniepige investeerder heeft echter andere plannen met hun veelbelovende bedrijf, plannen waarbij Nick, Dale en Kurt helaas niet bij horen, en voordat ze nog maar... 
+                                </p>
+								
+								<a href="details/horrible_bosses_two.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/12.png" alt="12"></li>
+									<li><img src="images/ratings/angst.png" alt="angst"></li>
+									<li><img src="images/ratings/geweld.png" alt="geweld"></li>
+									<li><img src="images/ratings/grof_taalgebruik.png" alt="grof taalgebruik"></li>
+								</ul>
+							</div>
+						</li>
+                        <li id="the penguins of madagascar" class="overzicht_list_item B">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/penguinsmadagascar.jpg" alt="The Penguins of madagascar">
+								
+								<a id="The penguins of madagascar" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 3 december</span>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="80" class="0.1 linksh3 filmnaam" href="details/the_penguins_of_madagascar.html">the penguins of madagascar</a></h3>
+								<p>
+									De vier pinguïns, Skipper, Rico, Kowalski en Private bundelen hun krachten met de chique spionagedienst de 'North Wind' die onder leiding staat van agent Classified. Samen moeten ze het opnemen tegen de kwaadaardige Dr. Octavius Brine die de wereld wil veroveren... 
+                            
+                                </p>
+								
+								<a href="details/the_penguins_of_madagascar.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/AL.png" alt="alle leeftijden"></li>
+								</ul>
+							</div>
+						</li>
+                        <li id="big hero 6" class="overzicht_list_item B">
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/bighero6.jpg" alt="Big Hero 6">
+								
+								<a id="Big hero 6" onclick="filmnaama(this.id)" href="#loginScreen" class="button">Reserveer nu</a>
+								<span class="vanaf_prijs">Vanaf 11 februari</span>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="102" class="8.1 linksh3 filmnaam" href="details/big_hero_6.html">big hero 6</a></h3>
+								<p>
+									Big Hero 6 draait om Hiro Hamada, een wonderkind en robotica-expert. Hij raakt betrokken bij een crimineel plan dat de hectische, hightech stad San Fransokyo dreigt te vernietigen. Met de hulp van zijn beste vriend – de robot Baymax – sluit Hiro zich aan bij een team van ... 
+                            
+                                </p>
+								
+								<a href="details/big_hero_6.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/12.png" alt="16"></li>
+									<li><img src="images/ratings/angst.png" alt="angst"></li>
+									<li><img src="images/ratings/geweld.png" alt="geweld"></li>
+									<li><img src="images/ratings/grof_taalgebruik.png" alt="grof taalgebruik"></li>
+								</ul>
+							</div>
+						</li>
+                        
+					</ul>
+					<!-- end overzicht_list -->
+				</div>
+				<!-- end container module -->
+			</div>
+            <div class="container">
+                <br />
+                <br />
+                <div id="terug"></div>
+                <br />
+            </div>
+			
+			<!-- end overzicht_wrap -->
+		</main>
+		
+		<div class="cBoth"><!-- clearfix --></div>
+		
+		<!-- begin footer -->
+		<footer>
+			<div class="container module">
+				<img src="images/logo_footer.png" alt="Filmpje" class="logofoot" />
+				<span>&#169; Copyright Team Berg - 2014</span>
+			</div>
+		</footer>
+        <!-- Voor popup -->
+         <div id="loginScreen"> 
+            <div style="margin-left:100px;">
+                <a href="#" class="cancel">&times;</a> 
+                <object height="1000" width="1000" data="datumpick.html" ></object>
+            </div>
+        </div>
+        <div id="cover" > 
+
+        </div>
+    </body>
+    <script src="js/genre filter.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/Sorteer.js"></script>
+</html>

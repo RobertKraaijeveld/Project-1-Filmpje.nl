@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Filmpje - Films die niet meer draaien</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+        
+        <!-- CSS files -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+        <!-- Script files -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <!--  Onderin meer script -->
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="foundicons/foundation-icons.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo">Filmpje</a>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="over_ons.html">Over Filmpje</a></li>
+                        <li>
+                            <a href="overzicht.html" class="active">Films</a>
+                            <ul>
+                                <li><a href="overzicht_huidig.html">huidige films</a></li>
+                                <li><a href="overzicht_binnenkort.html">Binnenkort</a></li>
+                                <li><a href="overzicht_archief.html" class="active">Archief</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="catering.html">Catering</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav><!-- end nav -->
+            </div>
+        </header><!-- end header -->
+		
+		<main>
+			<div class="settings">
+				<div class="container module">
+					
+                    <form class="filters">
+
+                        <label>Genre:</label>
+                        <select name="filter_age" onchange="selectie(this)">
+                            <option value="Niets">Alle</option>
+                            <option value="A">Actie</option>
+                            <option value="B">Comedy</option>
+                            <option value="C">Sci-Fi</option>
+                            <option value="D">Thriller</option>
+                        </select>
+
+                        <label>Filter:</label>
+                        <select name="filter_alf" onchange="sorting(this)">
+                            <option value=""selected="selected">Geen</option>
+                            <option value="A-Z"         >A-Z</option>
+                            <option value="Z-A"         >Z-A</option>
+                            <option value="IMDB"        >IMDB-rating</option>
+                            <option value="Speeltijd"   >Speeltijd</option>
+                        </select>
+                        
+                    </form>
+					<!-- end filters -->
+					
+					<form class="search">
+                        <input type="text" title="Zoekbalk" id="userinput" placeholder="Typ hier om te zoeken" class="input_box" onkeydown="if (event.keyCode == 13) document.getElementById('search_button').click()">
+						
+                        <input class="search_button" onsubmit="return false;" type="button" value="Zoek" id="search_button">
+						
+
+					</form>
+					<!-- end search -->
+				</div>
+				<!-- end container module -->
+			</div>
+			<!-- end settings -->
+			
+			<div class="overzicht-wrap" id="overzicht_warp">
+				<div class="container module">
+					<ul class="overzicht_list" id="overzicht_list">
+						<li id="rio 2" class="overzicht_list_item B" >
+                            
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/rio2.jpg" alt="Rio 2">
+								
+								<a class="button-inactive">Draait niet meer</a>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="101" class="6.4 linksh3 filmnaam" href="details/rio_2.html">rio 2</a></h3>
+								<p>
+									
+                                    Het leven is letterlijk een jungle voor Blu, Jewel en hun drie kids in Rio 2. Als ze voor een familiereünie de magische stad verlaten en het regenwoud ingaan, krijgt Blu het in de voor hem onbekende omgeving aan de stok met twee pittige tegenstanders: zijn... 
+								
+                                </p>
+								
+								<a href="details/rio_2.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/6.png" alt="6"></li>
+									<li><img src="images/ratings/geweld.png" alt="geweld"></li>
+									
+								</ul>
+							</div>
+                            
+						</li>
+						<!-- end overzicht_list_item -->
+						
+						<li id="22 jump street" class="overzicht_list_item A">
+                            
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/22jumpstreet.jpg" alt="22 Jump Street">
+								
+								<a class="button-inactive">Draait niet meer</a>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="100" class="7.4 linksh3 filmnaam" href="details/22_jump_street.html">22 jump street</a></h3>
+								<p>
+                                    In de actie-komedie 22 Jump Street gaan de agenten Jenko (Channing Tatum) en Schmidt (Jonah Hill) opnieuw undercover als de broers Doug en Brad McQuaid. Ze moeten als eerstejaars...
+
+								</p>
+								
+								<a href="details/22_jump_street.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/12.png" alt="12"></li>
+									<li><img src="images/ratings/drugs_misbruik.png" alt="drugs misbruik"></li>
+									<li><img src="images/ratings/geweld.png" alt="geweld"></li>
+									<li><img src="images/ratings/grof_taalgebruik.png" alt="grof taalgebruik"></li>
+								</ul>
+							</div>
+                                
+						</li>
+						<!-- end overzicht_list_item -->
+						
+						<li id="expendables 3" class="overzicht_list_item A">
+                            
+							<div class="item_info">
+								<img class="item_cover" src="images/covers/expendables3.jpg" alt="Expendables 3">
+								
+								<a class="button-inactive">Draait niet meer</a>
+							</div>
+							<!-- end item_info -->
+							
+							<div class="item_content">
+								<h3><a id="126" class="6.3 linksh3 filmnaam" href="details/expendables_3.html">expendables 3</a></h3>
+								<p>
+                                    Barney (Stallone), Christmas (Statham) en de rest van het team komen oog in oog te staan met Conrad Stonebanks (Gibson), die jaren geleden samen met Barney The Expendables oprichtte...
+
+								</p>
+								
+								<a href="details/expendables_3.html">Lees meer</a>
+								
+								<ul class="ratings">
+									<li><img src="images/ratings/12.png" alt="12"></li>
+									<li><img src="images/ratings/angst.png" alt="angst"></li>
+									<li><img src="images/ratings/geweld.png" alt="geweld"></li>
+									<li><img src="images/ratings/grof_taalgebruik.png" alt="grof taalgebruiik"></li>
+								</ul>
+							</div>
+                            
+						</li>
+						<!-- end overzicht_list_item -->
+						
+						
+						
+					</ul>
+					<!-- end overzicht_list -->
+                    
+				</div>
+				<!-- end container module -->
+			
+            </div>
+            <div class="container">
+                <br />
+                <br />
+                <div id="terug"></div>
+                <br />
+            </div>
+			<!-- end overzicht_wrap -->
+		</main>
+
+        <div id="demo"></div>
+		
+		<div class="cBoth"><!-- clearfix --></div>
+		
+		<!-- begin footer -->
+		<footer>
+			<div class="container module">
+				<img src="images/logo_footer.png" alt="Filmpje" class="logofoot" />
+				<span>&#169; Copyright Team Berg - 2014</span>
+			</div>
+		</footer>
+    </body>
+    <script src="js/genre filter.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/Sorteer.js"></script>
+</html>

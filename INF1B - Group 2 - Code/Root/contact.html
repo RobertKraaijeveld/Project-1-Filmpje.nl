@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Filmpje - Contact</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+        
+        <!-- CSS files -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="foundicons/foundation-icons.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo">Filmpje</a>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="over_ons.html">Over Filmpje</a></li>
+                        <li>
+                            <a href="overzicht.html">Films</a>
+                            <ul>
+                                <li><a href="overzicht_huidig.html">huidige films</a></li>
+                                <li><a href="overzicht_binnenkort.html">Binnenkort</a></li>
+                                <li><a href="overzicht_archief.html">Archief</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="catering.html">Catering</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav><!-- end nav -->
+            </div>
+        </header><!-- end header -->
+        
+		<main>
+			<div class="container module contact-informatie">
+				<ul class="columns">
+					<li class="column two">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1230.3710217331345!2d4.4697347!3d51.92041729999976!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c434a3f2470a65%3A0xd4bc43a2c385f1ed!2sWest-Kruiskade+26%2C+3014+AS+Rotterdam!5e0!3m2!1snl!2snl!4v1410773031276" width="100%" height="500" frameborder="0" style="border:0">						</iframe>
+					</li><!-- end column two -->
+					
+					<li class="column two">
+						<div class="openingstijden">
+							<h3>Openingstijden</h3>
+							<table>
+							   <tbody>
+								   <tr>
+									   <td>Maandag</td>
+									   <td>13:00 - 02:00</td>
+								   </tr>
+
+								   <tr>
+									   <td>Dinsdag</td>
+									   <td>13:00 - 02:00</td>
+								   </tr>
+
+								   <tr>
+									   <td>Woensdag</td>
+									   <td>13:00 - 02:00</td>
+								   </tr>
+
+								   <tr>
+									   <td>Donderdag</td>
+									   <td>13:00 - 02:00</td>
+								   </tr>
+
+								   <tr>
+									   <td>Vrijdag</td>
+									   <td>13:00 - 02:00</td>
+								   </tr>
+
+								   <tr>
+									   <td>Zaterdag</td>
+									   <td>13:00 - 02:00</td>
+								   </tr>
+
+								   <tr>
+									   <td>Zondag</td>
+									   <td>13:00 - 02:00</td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!-- end openingstijden -->
+						
+						<div class="routebeschrijving">
+							<p>U vindt ons aan de West-Kruiskade 26, 3014 AS Rotterdam.</p>
+							
+							<h3>Openbaar vervoer</h3>
+							<p>
+				Komt u met het openbaar vervoer dan neemt u vanaf Rotterdam Centraal station tram 20 richting richting Lombardijen of tram 4/23 richting Marconiplein.
+							<br />
+								Bij halte Kruisplein stapt u uit. Vanaf daar loopt u naar het westen de West-Kruisstraat in. Na ruim 100 meter vindt u aan uw linkerhand de bioscoop.
+							</p>
+						</div><!-- end routebeschrijving -->
+					</li><!-- end column two -->
+				</ul><!-- end columns -->
+			</div><!-- end container module contact-informatie -->
+			
+			<div class="contact-form">
+				<div class="container module">
+					<div class="contact-form-wrap">
+						<form action="contactex.php" method="POST" enctype="multipart/form-data">
+							<div>
+								<label for="name">Naam *</label><br />
+								<input type="text" name="cf_name" placeholder="Uw naam" required />
+							</div>
+
+							<div>
+								<label for="email">E-mail *</label><br />
+								<input type="email" name="cf_email" placeholder="Uw e-mailadres" required />
+							</div>
+
+							<div>
+								<label for="message">Bericht *</label><br />
+								<textarea name="cf_message" placeholder="Typ hier uw bericht" required></textarea>
+							</div>
+							<input id="submit_button" type="submit" value="Verzend bericht" />
+							<span class="required">Velden met een * zijn verplicht</span>
+						</form>
+					</div><!-- end contact-form-wrap -->
+				</div><!-- end container module -->
+			</div><!-- end contact-form -->
+		</main>
+		
+        
+		<div class="cBoth"><!-- clearfix --></div>
+		
+		<!-- begin footer -->
+		<footer>
+			<div class="container module">
+				<img src="images/logo_footer.png" alt="Filmpje" class="logofoot" />
+				<span>&#169; Copyright Team Berg - 2014</span>
+			</div>
+		</footer>
+    </body>
+</html>

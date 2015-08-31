@@ -1,0 +1,1139 @@
+*, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+/** Met dank aan tutorial: http://css-tricks.com/spacing-the-bottom-of-modules/ **/
+.module > *:last-child,
+.module > *:last-child > *:last-child,
+.module > *:last-child > *:last-child > *:last-child {
+    margin-bottom: 0;
+}
+
+.cBoth {
+	clear: both;
+}
+
+.social-media {
+	overflow: hidden;
+	display: block;
+}
+
+.twitter, .facebook {
+	margin: 40px 0;
+	float: left;
+	width: 50%;
+}
+
+.twitter {
+	padding-right: 40px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #505050;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.container {
+    margin: 0 auto;
+	padding: 0 40px;
+	max-width: 1080px;
+}
+
+h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+    
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+    .overzicht-heading {
+        display: block;
+        margin-bottom: 20px;
+        padding: 40px;
+        
+        font-size: 24px;
+        color: #fff;
+        
+        border-radius: 4px;
+    }
+            
+        #huidig-heading {
+            background: url('../images/huidig-heading.png') center center;
+        }
+
+        #binnenkort-heading {
+            background: url('../images/binnenkort-heading.png') center center;
+        }
+
+        #archief-heading {
+            background: url('../images/archief-heading.png') center center;
+        }
+
+p {
+	margin-bottom: 20px;
+}
+
+main {
+	margin-top: 80px;
+}
+
+.button {
+	display: inline-block;
+	padding: 0 20px;
+	
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	
+	background: #ff5d6d;
+	border-radius: 3px;
+}
+
+/***** Columns *****/
+/*******************/
+.columns {
+    
+}
+
+.column {
+    float: left;
+    padding: 0 10px;
+}
+
+.two {
+	width: 50%;
+}
+
+.three {
+    width: 33%;
+}
+
+.four {
+    width: 25%;
+}
+
+/***** Header *****/
+/******************/
+header {
+    z-index: 1;
+	width: 100%;
+    height: 80px;
+	top: 0;
+	position: fixed;
+    
+    line-height: 80px;
+    
+	opacity: .9;
+    background: #fff;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.logo {
+    float: left;
+    
+    font-family: 'Oswald', sans-serif;
+    color: #ff6d6d;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+/** Navigation met hulp van http://cssdeck.com/labs/another-simple-css3-dropdown-menu **/
+@media screen and (max-width:600px) {
+    header {
+        height: auto;
+        position: relative;
+        border-bottom: none;
+    }
+    
+    main {
+        margin-top: 0;
+    }
+    
+    .logo {
+        width: 100%;
+    }
+    
+    nav {
+        display: block;
+        width: 100%;
+    }
+
+    nav li {
+        display: block;
+        line-height: 15px;
+    }
+    
+    nav li a {
+        display: block;
+        padding: 14px 0;
+        
+        color: #9d9d9d;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        
+        border-bottom: 1px solid #d9d9d9;
+    }
+    
+        nav li ul li a {
+            padding-left: 15px;
+        }
+    
+    nav a.active, nav a:hover {
+        color: #ff6d6d;
+    }
+}
+
+@media screen and (min-width:600px) {
+    nav {
+        float: right;
+    }
+
+    nav a {
+        color: #9d9d9d;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    nav a.active, nav a:hover {
+        color: #ff6d6d;
+    }
+
+    nav ul {
+      text-align: left;
+      display: inline;
+      margin: 0;
+      list-style: none;
+    }
+
+    nav ul li {
+      font: bold 12px/18px sans-serif;
+      display: inline-block;
+      margin-right: -4px;
+      position: relative;
+      padding: 15px 10px;
+      background: #fff;
+      cursor: pointer;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+
+    nav ul li:hover {
+      background: #fff;
+      color: #fff;
+    }
+    nav ul li ul {
+        padding: 0;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        width: 150px;
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav ul li ul li { 
+      background: #fff; 
+      display: block;
+        padding: 15px 15px;
+      color: #fff;
+    }
+    nav ul li ul li:hover a { color: #ff6d6d; }
+    nav ul li:hover ul {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+}
+
+/***** Slider *****/
+/******************/
+#slider {
+    z-index: 0;
+    width: 100%;
+}
+
+/***** Settings *****/
+/********************/
+.settings {
+	overflow: hidden;
+	
+	color: #8b8b8b;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 50px;
+	
+	background: #f0f0f0;
+}
+
+.filters {
+	float: left;
+}
+
+.filters select {
+	margin-right: 20px;
+}
+
+.search {
+	float: right;
+}
+
+#userinput {
+	margin-right: 10px;
+	padding: 7px;
+	width: 200px;
+}
+
+.search .search_button {
+	padding: 8px 12px;
+	
+	color: #fff;
+	
+	cursor: pointer;
+	
+	border: none;
+	background: #ff5d6d;
+	border-radius: 3px;
+}
+
+/***** Keypoints *****/
+/*********************/
+.keypoints {
+    overflow: hidden;
+    padding: 40px 0;
+    
+    text-align: center;
+    
+    background: #ececec;
+}
+
+.keypoints p {
+	line-height: 24px;
+}
+
+.keypoint-circle {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 120px;
+    
+    color: #fff;
+    font-size: 42px;
+    line-height: 120px;
+    
+    background: #ff5d6d;
+    
+    border-radius: 60px;
+    transition: all 0.2s ease;
+}
+
+.keypoint-circle:hover {
+    width: 130px;
+	margin-bottom: 17px;
+    
+    line-height: 130px;
+    border-radius: 65px;
+    
+    transition: all .2s ease;
+}
+
+/***** Last minute *****/
+/***********************/
+.last-minute {
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.last-minute-item {
+    float: left;
+    margin-bottom: 40px;
+    width: 50%;
+}
+
+.last-minute-item img {
+    float: left;
+    margin-right: 20px;
+    width: 30%;
+}
+
+.last-minute-item h3 {
+    float: left;
+}
+
+/***** Call to action *****/
+/**************************/
+.call-to-action {
+    overflow: hidden;
+    
+    background: #ff5d6d;
+}
+
+.call-to-action a {
+    float: left;
+    width: 33%;
+    
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 100px;
+    
+    background: #ff5d6d;
+    transition: all .2s ease;
+}
+
+.call-to-action a i {
+    margin-right: 15px;
+    font-size: 26px;
+}
+
+.call-to-action a:hover {
+    color: #ff5d6d;
+    
+    background: #fff;
+    transition: all .3s ease;
+}
+
+/***** Detailpagina *****/
+/************************/
+.details-wrap {
+	overflow: hidden;
+	padding-bottom: 40px;
+}
+
+.details-actions {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.details-actions li {
+	float: left;
+}
+
+.details-actions li a {
+	margin-right: 10px;
+	padding: 6px 10px;
+	
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	
+	background: #ff5d6d;
+	border-radius: 3px;
+}
+.details-actions .over{
+	margin-right: 10px;
+	padding: 6px 10px;
+	
+	color: #8b8b8b;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	
+	background: #d9d9d9;
+	border-radius: 3px;
+}
+
+
+.details-sidebar {
+	overflow: hidden;
+	float: left;
+	width: 20%;
+	padding: 40px 0 0 0;
+}
+
+.details-sidebar img {
+	margin-bottom: 20px;
+	max-width: 100%;
+}
+
+.details-sidebar .ratings {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.details-sidebar .ratings li {
+	float: left;
+	margin-right: 10px;
+}
+
+.details-sidebar .extra-info {
+	display: block;
+	float: left;
+	margin-bottom: 20px;
+	width: 100%;
+	
+	font-size: 14px;
+}
+
+imdbRatingPlugin {
+	padding: 10px;
+}
+
+.details-main {
+	overflow: hidden;
+	float: left;
+	width: 80%;
+	padding: 40px 0 0 40px;
+}
+
+/** Trailer **/
+.video-container {
+	width: 100%;
+}
+
+/** Met dank aan tutorial: http://avexdesigns.com/responsive-youtube-embed/ **/
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+ 	width: 100%;
+    height: 100%;
+}
+
+/***** Overzichts pagina's *****/
+/*******************************/
+.overzicht-wrap {
+	overflow: hidden;
+	padding: 40px 0;
+}
+
+.center-button {
+	display: inline-block;
+	margin-bottom: 40px;
+	padding: 0 20px;
+	
+	color: #fff;
+	font-weight: 600;
+	line-height: 44px;
+	text-decoration: none;
+	
+	background: #31a8ff;
+	border-radius: 3px;
+    transition: background ease .3s;
+}
+
+.linksh3 {
+    color:#505050!important;
+    font-weight: 500!important;
+    font-family:'Oswald',sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+    .center-button:hover {
+        background: #46b1ff;
+        transition: background ease .3s;
+    }
+
+	.center-button i {
+		margin-right: 10px;
+		
+		font-size: 20px;
+	}
+
+.item_info {
+	float: left;
+	width: 30%;
+}
+
+.item_info .item_cover {
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.overzicht_list_item {
+	margin-bottom: 40px;
+}
+
+.overzicht_list_item .item_content {
+	float: left;
+	padding: 0 20px;
+	width: 70%;
+}
+
+.overzicht_list_item .ratings li {
+	float: left;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+.overzicht_list .overzicht_list_item {
+	float: left;
+	width: 50%;
+}
+
+.overzicht_list .item_info .button {
+	display: block;
+	
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	
+	background: #ff5d6d;
+	border-radius: 3px;
+    transition: background ease .3s;
+}
+
+    .overzicht_list .item_info .button:hover {
+        background: #ff6a78;
+        transition: background ease .3s;
+    }
+
+.overzicht_list .item_info .button-inactive {
+	display: block;
+	
+	color: #8b8b8b;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	
+	cursor: default;
+	
+	background: #d9d9d9;
+	border-radius: 3px;
+}
+
+.item_content a {
+	color: #31a8ff;
+	text-decoration: none;
+	font-weight: lighter;
+}
+
+.overzicht_list .item_info .vanaf_prijs {
+	display: block;
+	padding: 10px 0;
+	
+	font-size: 14px;
+	
+	text-align: center;
+}
+
+/***** Over filmpje *****/
+/************************/
+.over-filmpje-heading {
+	overflow: hidden;
+	height: 200px;
+	
+	text-align: center;
+	
+	background: #1d1d1d;
+}
+
+	.over-filmpje-heading img {
+		margin-bottom: -4px;
+		max-width: 100%;
+	}
+
+.contact-introductie {
+	overflow: hidden;
+	padding: 40px 0;
+}
+
+    .contact-image {
+        text-align: center;
+    }
+
+        .contact-image img {
+            max-width: 100%;
+            height: 250px;
+
+            border-radius: 100%;
+        }
+
+.zalen-introductie {
+	overflow: hidden;
+	padding: 40px 0;
+    
+    background: #ececec;
+}
+
+.auro-introductie {
+	overflow: hidden;
+	padding: 40px 0;
+}
+
+/***** Catering *****/
+/********************/
+.catering-heading {
+	text-align: center;
+	
+	background: #1d1d1d;
+}
+
+	.catering-heading img {
+		margin-bottom: -4px;
+		max-width: 100%;
+	}
+
+.cafe-introductie {
+	overflow: hidden;
+	padding: 40px 0;
+	
+	background: #ececec;
+}
+
+	.cafe-logo {
+		text-align: center;
+	}
+
+	.cafe-logo img {
+		max-width: 100%;
+	}
+
+.allergie-informatie {
+	padding: 80px 0;
+	
+	color: #fff;
+	text-align: center;
+	
+	background: #4b4b4b url('../images/catering-bg.png') no-repeat center center;
+}
+
+	.allergie-informatie h2 {
+		margin-bottom: 20px;
+		
+		font-size: 32px;
+		font-weight: 300;
+	}
+
+	.allergie-informatie p {
+		margin: 0 auto;
+		max-width: 500px;
+		
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 24px;
+	}
+
+.cafe-review {
+	overflow: hidden;
+	padding: 40px 0;
+	
+	color: #fff;
+	
+	background: #4b4b4b url('../images/cafe-review-bg.png') no-repeat center center;
+}
+	
+	.review-image {
+		text-align: center;
+	}
+
+	.review-image img {
+		width: 50%;
+		height: 50%;
+		
+		border-radius: 100%;
+		border: 5px solid rgba(255,255,255,.1);
+		transition: border ease .2s;
+	}
+
+		.review-image img:hover {
+			border: 5px solid rgba(255,255,255,.2);
+			transition: border ease .3s;
+		}
+
+.review-quote {
+	font-size: 20px;
+	font-weight: 100;
+	font-style: italic;
+	line-height: 26px;
+	text-shadow: 1px 1px 3px rgba(0,0,0,.5);
+}
+
+.review-quote .quotes {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.review-quote .review-heading {
+	display: block;
+	margin-bottom: 10px;
+	
+	font-family: 'Oswald', sans-serif;
+	font-size: 26px;
+	font-style: normal;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.quote-rating li {
+	float: left;
+	margin-right: 12px;
+
+	color: #ffce00;
+	font-size: 32px;
+}
+
+/*** Menukaart ***/
+.menukaart {
+	overflow: hidden;
+	padding: 40px 0;
+}
+
+.menukaart table {
+	margin-bottom: 40px;
+	
+	border: 1px solid #d9d9d9;
+}
+
+.menukaart .table-heading {
+	border-radius: 5px;
+}
+
+.menukaart th {
+	padding: 10px;
+	
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: left;
+	text-shadow: 0 1px 0 #fff;
+	
+	
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.7);
+	background: #e8e8e8; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e8e8e8 0%, #d9d9d9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e8e8), color-stop(100%,#d9d9d9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e8e8e8 0%,#d9d9d9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e8e8e8 0%,#d9d9d9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e8e8e8 0%,#d9d9d9 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e8e8e8 0%,#d9d9d9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#d9d9d9',GradientType=0 ); /* IE6-9 */
+}
+
+.menukaart td {
+	padding: 5px 10px;
+	
+	font-size: 14px;
+	
+	background: #fff;
+	border: 1px solid #d9d9d9;
+}
+
+	.menukaart .allergie {
+		font-size: 18px;
+		text-align: center;
+	}
+
+.menukaart .drinken {
+	float: left;
+}
+
+.menukaart .snacks {
+	float: right;
+}
+
+.menukaart .drinken, .snacks {
+	width: 48%;
+}
+
+	.menukaart .drinken table, .menukaart .snacks table {
+		width: 100%;
+	}
+
+/***** Contact *****/
+/*******************/
+.contact-informatie {
+	overflow: hidden;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.openingstijden {
+	margin-bottom: 40px;
+}
+
+	.openingstijden table {
+		width: 100%;
+	}
+
+		.openingstijden td {
+			width: 30%;
+		}
+
+.routebeschrijving {
+	margin-bottom: 40px;
+}
+
+.contact-form {
+	background: #ececec url('../images/contact-form-bg.png') no-repeat center;
+}
+
+.contact-form-wrap {
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 40px 0;
+	max-width: 400px;
+}
+
+	.contact-form-wrap label {
+		display: inline-block;
+		margin-bottom: 10px;
+		
+		font-family: 'Oswald', sans-serif;
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+
+	.contact-form-wrap input, .contact-form-wrap textarea {
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 10px;
+		
+		font-size: 16px;
+		
+		border: none;
+		border-radius: 3px;
+		border: 3px solid #fff;
+		transition: border ease .3s;
+		box-shadow: 0 1px 0 rgba(0,0,0,.1);
+	}
+
+	.contact-form-wrap textarea {
+		max-width: 100%;
+		min-height: 130px;
+        max-height: 400px;
+	}
+
+	.contact-form-wrap input:focus, .contact-form-wrap textarea:focus {
+		outline: none;
+		
+		border: 3px solid #d9d9d9;
+		transition: border ease .3s;
+	}
+
+	input:required {
+		background: #fff;
+	}
+
+#submit_button {
+	display: inline-block;
+	padding: 12px 0;
+	
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+	
+	cursor: pointer;
+	
+	border: none;
+	background: #ff5d6d;
+	border-radius: 3px;
+}
+
+.required {
+	display: block;
+
+	font-size: 14px;
+	font-style: italic;
+	text-align: center;
+}
+
+/***** Footer *****/
+/******************/
+footer {
+	overflow: hidden;
+	padding: 20px 0;
+	
+	border-top: 1px solid #d9d9d9;
+}
+
+.logofoot {
+	float: left;
+	margin-right: 20px;
+	
+	opacity: .2;
+}
+
+footer span {
+	float: left;
+	
+	color: #bebebe;
+	font-size: 14px;
+	line-height: 31px;
+}
+
+/***** Ticket *****/
+/*************************/
+#ticket {
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+    #ticket object{
+        margin-left: -40px
+    }
+
+/***** Mobile styles *****/
+/*************************/
+@media screen and (max-width:1000px) {    
+	/*** Columns ***/
+	.two, .three, .four {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	
+	/*** Call to action buttons ***/
+	.call-to-action a {
+		width: 100%;
+		padding-left: 40px;
+		
+		text-align: left;
+		line-height: 60px;
+	}
+	
+	/*** Social media widgets ***/
+	.twitter, .facebook {
+		margin: 20px 0;
+		padding: 0;
+		width: 100%;
+	}
+	
+	.facebook {
+		padding-bottom: 40px;
+	}
+	
+	/*** Catering pagina ***/
+	.cafe-logo img {
+		margin-bottom: 20px;
+		max-width: 100%;
+		height: 180px;
+	}
+	
+	.over-filmpje-heading {
+		height: 120px;
+	}
+	
+	.menukaart .snacks {
+		float: left;
+	}
+
+	.menukaart .drinken, .snacks {
+		width: 100%;
+	}
+	
+	/*** Overzichtspagina ***/
+	.overzicht_list .overzicht_list_item {
+		width: 100%;
+	}
+	
+	/*** Detailpagina ***/
+	.details-sidebar {
+		width: 100%;
+	}
+    
+    .button {
+        font-size: 12px;
+        line-height: 10px;
+        padding: 10px;
+    }
+	
+		.details-sidebar .extra-info {
+			font-size: 20px;
+			line-height: 28px;
+			text-align: center;
+		}
+	
+			.details-sidebar .extra-info img {
+				width: 60%;
+			}
+	
+		.details-sidebar .ratings {
+			width: 60%;
+		}
+	
+		.details-sidebar .imdbRatingPlugin {
+			width: 40%;
+		}
+	
+	.details-main {
+		width: 100%;
+		padding: 40px 0 0 0;
+	}
+    
+    /*** Settings ***/
+    .settings {
+        overflow: hidden;
+
+        color: #8b8b8b;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 50px;
+
+        background: #f0f0f0;
+    }
+
+    .filters {
+        float: left;
+    }
+
+    .filters select {
+        margin-right: 20px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .search {
+        width: 100%;
+        padding: 10px 0;
+        float: left;
+    }
+
+    #userinput {
+        margin-right: 10px;
+        padding: 7px;
+        width: 200px;
+    }
+
+    .search .search_button {
+        padding: 8px 12px;
+
+        color: #fff;
+
+        cursor: pointer;
+
+        border: none;
+        background: #ff5d6d;
+        border-radius: 3px;
+    }
+}
+
+@media screen and (max-width:500px) { 
+    .menukaart .broodjes th, .menukaart .broodjes td {
+        font-size: 11px;
+    }
+    
+    .hidden {
+        display: none;
+    }
+}

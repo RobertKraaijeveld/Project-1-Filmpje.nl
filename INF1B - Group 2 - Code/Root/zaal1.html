@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <!-- Script files -->
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.1.min.js" ></script> 
+		
+        <link rel="stylesheet" href="css/main.css" type="text/css" />
+		<link rel="stylesheet" href="css/zaal.css" type="text/css" />
+		
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Reserveren</title>
+    </head>
+
+
+    <body>
+		<div class="container">
+			<div id="stoelendeel">
+			<table id="tabelzaal1">
+				<tr>
+					<td></td>
+					<td></td>
+					<td><input class="A" id=0 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=1 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=2 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=3 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=4 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=5 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=6 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=7 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input class="A" id=8 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=9 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=10 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=11 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=12 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=13 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=14 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=15 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=16 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=17 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input class="A" id=18 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=19 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=20 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=21 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=22 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=23 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=24 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=25 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=26 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=27 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><input class="A" id=28 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=29 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=30 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=31 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=32 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=33 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=34 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=35 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=36 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=37 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=38 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=39 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+				</tr>
+				<tr>
+					<td><input class="A" id=40 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=41 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=42 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=43 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=44 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=45 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=46 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=47 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=48 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=49 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=50 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=51 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+				</tr>
+				<tr>
+					<td><input class="A" id=52 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=53 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=54 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=55 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=56 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="C" id=57 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="C" id=58 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=59 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=60 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=61 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=62 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=63 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+				</tr>
+				<tr>
+					<td><input class="A" id=64 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=65 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=66 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=67 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=68 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="C" id=69 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="C" id=70 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=71 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=72 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=73 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=74 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=75 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+				</tr>
+				<tr>
+					<td><input class="A" id=76 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=77 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=78 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=79 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=80 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="C" id=81 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="C" id=82 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=83 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=84 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=85 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=86 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=87 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+				</tr>
+				<tr>
+					<td><input class="A" id=88 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=89 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=90 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=91 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=92 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="C" id=93 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="C" id=94 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=95 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="B" id=96 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=97 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=98 type="button" onclick="reply_click(this.id); BerekenPrijs(this)" /></td>
+					<td><input class="A" id=99 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+				</tr>
+				<tr>
+					<td><input class="A" id=100 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=101 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=102 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=103 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="B" id=104 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="B" id=105 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="B" id=106 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="B" id=107 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=108 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=109 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=110 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=111 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+				</tr>
+				<tr>
+					<td><input class="A" id=112 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=113 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=114 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=115 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=116 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="B" id=117 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="B" id=118 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=119 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=120 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=121 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=122 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=123 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input class="A" id=124 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=125 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=126 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=127 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=128 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=129 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=130 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=131 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=132 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=133 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td><input class="A" id=134 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=135 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=136 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=137 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=138 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=139 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=140 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=141 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td> 
+					<td><input class="A" id=142 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=143 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=144 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=145 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=146 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=147 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=148 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td><input class="A" id=149 type="button" onclick="reply_click(this.id); BerekenPrijs(this)"/></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+			</div>
+			
+			<div class="legenda">
+				<h1>Kostenlegenda</h1>
+				<table>
+					<tr>
+
+						<!-- dit zijn voorbeeldknoppen, die de prijscounter niet verhogen -->
+
+						<td><input class="D"  type="button" disabled="disabled" /></td>
+						<td>Bezet</td>
+					</tr>
+					<tr>
+						<td><input class="A" id="152"  type="button" disabled="disabled" /></td>
+						<td>Prijs: €7,50,-</td>
+					</tr>
+					<tr>
+						<td><input class="B" id="153"  type="button" disabled="disabled" /></td>
+						<td>Prijs: €11,-</td>
+					</tr>
+					<tr>
+						<td><input class="C" id="154"  type="button" disabled="disabled" /></td>
+						<td>Prijs: €13,-</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="opties">
+				<!--  hier begint de output en de calls to action printen/afrekenen/redo -->
+				<p id="output" > €0.00 Stoelnummer:</p>
+				<br />
+				<input type="button" id="redoo" value="Opnieuw beginnen" onclick="Redo(1)"/>
+				<input type="button" id="bestellen" value="Bestellen" onclick="inputValidation()"/>
+				<a href="ticket.html" target="_blank"><button disabled="disabled" id="afrekenen" onclick="afrekenen()">Afrekenen</button></a>
+
+				<br />
+				<br />
+				<input type="text" id="voornaam" value="Voornaam"/>
+				<input type="text" id="achternaam" value="Achternaam"/>
+				<input type="text" id="telefoon" value="Telefoonnummer"/>
+				<input type="text" id="email" value="email@adres.nl"/>
+
+				<!-- alles wat binnen #printstuff staat word geprint: easy! -->        
+			</div>                 
+		</div>
+    </body>
+</html>
+
+
